@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/check_zi"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simple_img"
+        android:layout_width="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher_background" />
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+     <TextView
+         android:id="@+id/shop_name"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_height="50dp"
+         android:text="商品名称:"
+         android:gravity="center_vertical"
+         android:textSize="18sp"
+         />
+
+     <TextView
+         android:id="@+id/price"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="10dp"
+         android:gravity="bottom"
+         android:text="价格:"
+         android:textSize="19sp" />
+ </LinearLayout>
+
+    <com.bwie.my.utils.ButtonT
+        android:id="@+id/butto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp">
+    </com.bwie.my.utils.ButtonT>
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_black"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>
